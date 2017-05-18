@@ -4,7 +4,7 @@
 
 import UIKit
 
-final class FormController: UITableViewController {
+final class UserFormController: UITableViewController {
 
     lazy var models: [FormFieldDataModel] = {
         let item1 = FormFieldDataModel(placeholderText: "First Name")
@@ -14,6 +14,7 @@ final class FormController: UITableViewController {
 
     fileprivate struct CellIds {
         static let detailCell = "detailTextFieldCell"
+        static let passwordCell = "passwordCell"
     }
 
     override func viewDidLoad() {
@@ -27,29 +28,39 @@ final class FormController: UITableViewController {
     private func registerCells() {
         let nib = UINib(nibName: "UserDetailsAdvancedTextFieldCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: CellIds.detailCell)
+
+        let nib2 = UINib(nibName: "UserDetailsPasswordCell", bundle: nil)
+        tableView.register(nib2, forCellReuseIdentifier: CellIds.passwordCell)
     }
 
 }
 
 
 //MARK:- Delegates
-extension FormController {
+extension UserFormController {
 
 
 }
 
 //MARK:- DataSource
-extension FormController {
+extension UserFormController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CellIds.detailCell)!
-        //Configure
+        var cell = UITableViewCell()
         let currentModel = models[indexPath.row]
-        (cell as! UserDetailTextFieldCell).setupFormField(with: currentModel)
+
+        //Configure
+        if indexPath.row == 0 {
+            cell = tableView.dequeueReusableCell(withIdentifier: CellIds.detailCell)!
+            (cell as? UserDetailTextFieldCell)?.setupFormField(with: currentModel)
+        } else if indexPath.row == 1 {
+            cell = tableView.dequeueReusableCell(withIdentifier: CellIds.passwordCell)!
+            (cell as? UserDetailPasswordCell)?.setupFormField(with: currentModel)
+        }
 
         return cell
     }

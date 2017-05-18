@@ -1,8 +1,4 @@
 //
-//  POPTests.swift
-//  POPTests
-//
-//  Created by Vijaya Prakash Kandel on 17.05.17.
 //  Copyright © 2017 zalando. All rights reserved.
 //
 
@@ -34,3 +30,4 @@ class POPTests: XCTestCase {
     }
     
 }
+

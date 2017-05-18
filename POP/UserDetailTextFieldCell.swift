@@ -74,7 +74,6 @@ extension UserDetailTextFieldCell {
         inputField.addConstraints([leadingCons, trailingCons, heightCons, yCons])
     }
 
-
     func applyEnabledVisualStyle() {
         inputFieldBottomBorder?.backgroundColor = .orange
         cellHeaderLabel.textColor = .orange
@@ -88,7 +87,6 @@ extension UserDetailTextFieldCell {
         inputField.placeholder = dataModel?.placeholderText
         toggleHeaderLabelVisibility(false)
     }
-
 
     private func toggleHeaderLabelVisibility(_ isVisible: Bool = true) {
         if let text = inputField.text, !text.isEmpty {
@@ -115,12 +113,12 @@ extension UserDetailTextFieldCell {
     }
 
     private func animationDuration(animated: Bool) -> Double {
-        return animated ? 0.3 : 0
+        return animated ? 0.3: 0
     }
 
     private func headerLabelFrame(animated: Bool) -> CGRect {
         let yOffset: CGFloat = 15
-        return cellHeaderLabel.frame.offsetBy(dx: 0, dy: animated ? yOffset * -1 : yOffset)
+        return cellHeaderLabel.frame.offsetBy(dx: 0, dy: animated ? yOffset * -1: yOffset)
     }
 
 }

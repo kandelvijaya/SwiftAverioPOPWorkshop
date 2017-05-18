@@ -18,7 +18,7 @@
 		289E28E91ECCFA9F006AC491 /* UserDetailTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E28E81ECCFA9F006AC491 /* UserDetailTextFieldCell.swift */; };
 		289E28EB1ECCFAE0006AC491 /* UserDetailPassowrdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E28EA1ECCFAE0006AC491 /* UserDetailPassowrdCell.swift */; };
 		289E28ED1ECCFB76006AC491 /* BaseTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E28EC1ECCFB76006AC491 /* BaseTextFieldCell.swift */; };
-		289E28F11ECD00FA006AC491 /* FormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E28F01ECD00FA006AC491 /* FormController.swift */; };
+		289E28F11ECD00FA006AC491 /* UserFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E28F01ECD00FA006AC491 /* UserFormController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 		289E28E81ECCFA9F006AC491 /* UserDetailTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailTextFieldCell.swift; sourceTree = "<group>"; };
 		289E28EA1ECCFAE0006AC491 /* UserDetailPassowrdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailPassowrdCell.swift; sourceTree = "<group>"; };
 		289E28EC1ECCFB76006AC491 /* BaseTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextFieldCell.swift; sourceTree = "<group>"; };
-		289E28F01ECD00FA006AC491 /* FormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormController.swift; sourceTree = "<group>"; };
+		289E28F01ECD00FA006AC491 /* UserFormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserFormController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				289E28B91ECCF085006AC491 /* CollectionViewController.swift */,
-				289E28F01ECD00FA006AC491 /* FormController.swift */,
+				289E28F01ECD00FA006AC491 /* UserFormController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -256,7 +256,7 @@
 				289E28EB1ECCFAE0006AC491 /* UserDetailPassowrdCell.swift in Sources */,
 				289E28BA1ECCF085006AC491 /* CollectionViewController.swift in Sources */,
 				289E28E91ECCFA9F006AC491 /* UserDetailTextFieldCell.swift in Sources */,
-				289E28F11ECD00FA006AC491 /* FormController.swift in Sources */,
+				289E28F11ECD00FA006AC491 /* UserFormController.swift in Sources */,
 				289E28ED1ECCFB76006AC491 /* BaseTextFieldCell.swift in Sources */,
 				289E28B81ECCF085006AC491 /* AppDelegate.swift in Sources */,
 			);

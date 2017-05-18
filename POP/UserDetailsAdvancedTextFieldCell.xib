@@ -43,7 +43,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOK-xZ-AaG">
                         <rect key="frame" x="8" y="13.5" width="40" height="40"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mUV-5P-Qul">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ninja" translatesAutoresizingMaskIntoConstraints="NO" id="mUV-5P-Qul">
                                 <rect key="frame" x="8" y="8" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="24" id="WDj-ct-vOA"/>
@@ -82,4 +82,7 @@
             <point key="canvasLocation" x="188" y="384"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="ninja" width="512" height="512"/>
+    </resources>
 </document>
