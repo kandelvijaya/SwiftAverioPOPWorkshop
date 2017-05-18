@@ -6,7 +6,7 @@ import UIKit
 
 struct FormFieldDataModel {
 
-    var text: String
+    var placeholderText: String
 
 }
 
@@ -18,7 +18,7 @@ class BaseUserTextFieldCell: UITableViewCell {
 
     func setupFormField(with data: FormFieldDataModel) {
         self.dataModel = data
-        self.detailsTextField?.text = data.text
+        self.detailsTextField?.text = data.placeholderText
     }
 
 }

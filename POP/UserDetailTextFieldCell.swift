@@ -18,6 +18,7 @@ final class UserDetailTextFieldCell: BaseUserTextFieldCell {
 
     override func setupFormField(with data: FormFieldDataModel) {
         super.setupFormField(with: data)
+        inputField.placeholder = data.placeholderText
         setupCell()
     }
 
@@ -84,7 +85,7 @@ extension UserDetailTextFieldCell {
     func applyDisabledVisualStyle() {
         inputFieldBottomBorder?.backgroundColor = .black
         cellHeaderLabel.textColor = .gray
-        inputField.placeholder = dataModel?.text
+        inputField.placeholder = dataModel?.placeholderText
         toggleHeaderLabelVisibility(false)
     }
 

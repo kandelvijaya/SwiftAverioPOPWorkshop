@@ -68,6 +68,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28341A0A1ECE285C006292DF /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
 		289E28AB1ECCF085006AC491 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +96,7 @@
 		289E28B61ECCF085006AC491 /* POP */ = {
 			isa = PBXGroup;
 			children = (
+				28341A0A1ECE285C006292DF /* models */,
 				289E28EF1ECD00D2006AC491 /* supporting files */,
 				289E28EE1ECD00CB006AC491 /* controllers */,
 				289E28E31ECCFA1B006AC491 /* cells */,
@@ -462,6 +470,7 @@
 				289E28D31ECCF086006AC491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		289E28D41ECCF086006AC491 /* Build configuration list for PBXNativeTarget "POPTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +479,7 @@
 				289E28D61ECCF086006AC491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

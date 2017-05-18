@@ -6,6 +6,12 @@ import UIKit
 
 final class FormController: UITableViewController {
 
+    lazy var models: [FormFieldDataModel] = {
+        let item1 = FormFieldDataModel(placeholderText: "First Name")
+        let item2 = FormFieldDataModel(placeholderText: "Password")
+        return [item1, item2]
+    }()
+
     fileprivate struct CellIds {
         static let detailCell = "detailTextFieldCell"
     }
@@ -13,6 +19,9 @@ final class FormController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
+
+        //stop tableview show emty cells below
+        tableView.tableFooterView = UIView()
     }
 
     private func registerCells() {
@@ -39,8 +48,8 @@ extension FormController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIds.detailCell)!
         //Configure
-        let model = FormFieldDataModel(text: "hello there")
-        (cell as! UserDetailTextFieldCell).setupFormField(with: model)
+        let currentModel = models[indexPath.row]
+        (cell as! UserDetailTextFieldCell).setupFormField(with: currentModel)
 
         return cell
     }
