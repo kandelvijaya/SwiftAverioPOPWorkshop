@@ -10,6 +10,10 @@ struct FormFieldDataModel {
 
 }
 
+
+/**
+ This is base text field cell in the app.
+ */
 class BaseUserTextFieldCell: UITableViewCell {
 
     var dataModel: FormFieldDataModel?
@@ -20,6 +24,11 @@ class BaseUserTextFieldCell: UITableViewCell {
         self.dataModel = data
         self.detailsTextField?.text = data.placeholderText
     }
+
+    /// Assuem you have other logic such as
+    /// input validation
+    /// error reporting
+    /// cell setup
 
 }
 

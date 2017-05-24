@@ -20,9 +20,6 @@ final class UserFormController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
-
-        //stop tableview show emty cells below
-        tableView.tableFooterView = UIView()
     }
 
     private func registerCells() {
@@ -39,6 +36,21 @@ final class UserFormController: UITableViewController {
 //MARK:- Delegates
 extension UserFormController {
 
+    override func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
+        return 50
+    }
+
+    override func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+        return 60
+    }
+
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return HeaderView.create()
+    }
+
+    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return FooterView.create()
+    }
 
 }
 

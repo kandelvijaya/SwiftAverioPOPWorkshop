@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280AC82C1ED63AD5005CB1CE /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280AC82B1ED63AD5005CB1CE /* HeaderView.xib */; };
+		280AC82E1ED63BA8005CB1CE /* FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280AC82D1ED63BA8005CB1CE /* FooterView.xib */; };
+		280AC8301ED63C10005CB1CE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280AC82F1ED63C10005CB1CE /* HeaderView.swift */; };
+		280AC8321ED63C32005CB1CE /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280AC8311ED63C32005CB1CE /* FooterView.swift */; };
 		289E28B81ECCF085006AC491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E28B71ECCF085006AC491 /* AppDelegate.swift */; };
 		289E28BA1ECCF085006AC491 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E28B91ECCF085006AC491 /* CollectionViewController.swift */; };
 		289E28BD1ECCF085006AC491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289E28BB1ECCF085006AC491 /* Main.storyboard */; };
@@ -32,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		280AC8291ED639C8005CB1CE /* POPSample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = POPSample.playground; sourceTree = "<group>"; };
+		280AC82B1ED63AD5005CB1CE /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		280AC82D1ED63BA8005CB1CE /* FooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FooterView.xib; sourceTree = "<group>"; };
+		280AC82F1ED63C10005CB1CE /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		280AC8311ED63C32005CB1CE /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		289E28B41ECCF085006AC491 /* POP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		289E28B71ECCF085006AC491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		289E28B91ECCF085006AC491 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +77,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		280AC8281ED639A3005CB1CE /* Sample1 */ = {
+			isa = PBXGroup;
+			children = (
+				280AC8291ED639C8005CB1CE /* POPSample.playground */,
+			);
+			name = Sample1;
+			sourceTree = "<group>";
+		};
+		280AC82A1ED63AB9005CB1CE /* views */ = {
+			isa = PBXGroup;
+			children = (
+				280AC82B1ED63AD5005CB1CE /* HeaderView.xib */,
+				280AC82D1ED63BA8005CB1CE /* FooterView.xib */,
+				280AC82F1ED63C10005CB1CE /* HeaderView.swift */,
+				280AC8311ED63C32005CB1CE /* FooterView.swift */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
 		28341A0A1ECE285C006292DF /* models */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +124,8 @@
 		289E28B61ECCF085006AC491 /* POP */ = {
 			isa = PBXGroup;
 			children = (
+				280AC82A1ED63AB9005CB1CE /* views */,
+				280AC8281ED639A3005CB1CE /* Sample1 */,
 				28341A0A1ECE285C006292DF /* models */,
 				289E28EF1ECD00D2006AC491 /* supporting files */,
 				289E28EE1ECD00CB006AC491 /* controllers */,
@@ -231,9 +261,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280AC82E1ED63BA8005CB1CE /* FooterView.xib in Resources */,
 				289E28C21ECCF085006AC491 /* LaunchScreen.storyboard in Resources */,
 				289E28E71ECCFA77006AC491 /* UserDetailsPasswordCell.xib in Resources */,
 				289E28E51ECCFA2A006AC491 /* UserDetailsAdvancedTextFieldCell.xib in Resources */,
+				280AC82C1ED63AD5005CB1CE /* HeaderView.xib in Resources */,
 				289E28BF1ECCF085006AC491 /* Assets.xcassets in Resources */,
 				289E28BD1ECCF085006AC491 /* Main.storyboard in Resources */,
 			);
@@ -258,7 +290,9 @@
 				289E28E91ECCFA9F006AC491 /* UserDetailTextFieldCell.swift in Sources */,
 				289E28F11ECD00FA006AC491 /* UserFormController.swift in Sources */,
 				289E28ED1ECCFB76006AC491 /* BaseTextFieldCell.swift in Sources */,
+				280AC8321ED63C32005CB1CE /* FooterView.swift in Sources */,
 				289E28B81ECCF085006AC491 /* AppDelegate.swift in Sources */,
+				280AC8301ED63C10005CB1CE /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

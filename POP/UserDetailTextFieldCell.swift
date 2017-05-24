@@ -25,7 +25,7 @@ final class UserDetailTextFieldCell: BaseUserTextFieldCell {
     fileprivate func setupCell() {
         setupIcon()
         inputField.delegate = self
-        inputField.autocapitalizationType = .none
+        inputField.autocapitalizationType = .words
         customizeCell()
     }
 
