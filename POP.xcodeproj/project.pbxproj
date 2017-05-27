@@ -77,12 +77,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		280AC8281ED639A3005CB1CE /* Sample1 */ = {
+		280AC8281ED639A3005CB1CE /* playground */ = {
 			isa = PBXGroup;
 			children = (
 				280AC8291ED639C8005CB1CE /* POPSample.playground */,
 			);
-			name = Sample1;
+			name = playground;
 			sourceTree = "<group>";
 		};
 		280AC82A1ED63AB9005CB1CE /* views */ = {
@@ -125,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				280AC82A1ED63AB9005CB1CE /* views */,
-				280AC8281ED639A3005CB1CE /* Sample1 */,
+				280AC8281ED639A3005CB1CE /* playground */,
 				28341A0A1ECE285C006292DF /* models */,
 				289E28EF1ECD00D2006AC491 /* supporting files */,
 				289E28EE1ECD00CB006AC491 /* controllers */,
