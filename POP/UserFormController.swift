@@ -49,7 +49,12 @@ extension UserFormController {
     }
 
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return FooterView.create()
+        let footer = FooterView.create()
+
+        footer.onTapBlock = { [weak self] in
+            self?.performSegue(withIdentifier: "next", sender: self)
+        }
+        return footer
     }
 
 }

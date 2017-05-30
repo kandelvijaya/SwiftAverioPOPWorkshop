@@ -20,6 +20,9 @@
                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                     <color key="tintColor" red="0.96639602489999998" green="0.96268674180000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title="Submit and Contine"/>
+                    <connections>
+                        <action selector="onTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="pAp-Rm-sKN"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="0.66785611209999995" blue="0.039332662570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
