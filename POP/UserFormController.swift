@@ -13,8 +13,8 @@ final class UserFormController: UITableViewController {
     }()
 
     fileprivate struct CellIds {
-        static let detailCell = "detailTextFieldCell"
-        static let passwordCell = "passwordCell"
+        static let detailCell = "UserDetailTextFieldCell"
+        static let passwordCell = "UserDetailPasswordCell"
     }
 
     override func viewDidLoad() {
@@ -23,10 +23,10 @@ final class UserFormController: UITableViewController {
     }
 
     private func registerCells() {
-        let nib = UINib(nibName: "UserDetailsAdvancedTextFieldCell", bundle: nil)
+        let nib = UINib(nibName: "UserDetailTextFieldCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: CellIds.detailCell)
 
-        let nib2 = UINib(nibName: "UserDetailsPasswordCell", bundle: nil)
+        let nib2 = UINib(nibName: "UserDetailPasswordCell", bundle: nil)
         tableView.register(nib2, forCellReuseIdentifier: CellIds.passwordCell)
     }
 

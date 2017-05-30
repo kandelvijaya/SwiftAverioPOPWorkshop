@@ -11,16 +11,16 @@
 		280AC82E1ED63BA8005CB1CE /* FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280AC82D1ED63BA8005CB1CE /* FooterView.xib */; };
 		280AC8301ED63C10005CB1CE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280AC82F1ED63C10005CB1CE /* HeaderView.swift */; };
 		280AC8321ED63C32005CB1CE /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280AC8311ED63C32005CB1CE /* FooterView.swift */; };
+		289619A71EDD6E090057B148 /* TextFieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289619A61EDD6E090057B148 /* TextFieldModel.swift */; };
 		289E28B81ECCF085006AC491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E28B71ECCF085006AC491 /* AppDelegate.swift */; };
-		289E28BA1ECCF085006AC491 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E28B91ECCF085006AC491 /* CollectionViewController.swift */; };
 		289E28BD1ECCF085006AC491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289E28BB1ECCF085006AC491 /* Main.storyboard */; };
 		289E28BF1ECCF085006AC491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 289E28BE1ECCF085006AC491 /* Assets.xcassets */; };
 		289E28C21ECCF085006AC491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289E28C01ECCF085006AC491 /* LaunchScreen.storyboard */; };
 		289E28CD1ECCF086006AC491 /* POPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E28CC1ECCF086006AC491 /* POPTests.swift */; };
-		289E28E51ECCFA2A006AC491 /* UserDetailsAdvancedTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 289E28E41ECCFA2A006AC491 /* UserDetailsAdvancedTextFieldCell.xib */; };
-		289E28E71ECCFA77006AC491 /* UserDetailsPasswordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 289E28E61ECCFA77006AC491 /* UserDetailsPasswordCell.xib */; };
+		289E28E51ECCFA2A006AC491 /* UserDetailTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 289E28E41ECCFA2A006AC491 /* UserDetailTextFieldCell.xib */; };
+		289E28E71ECCFA77006AC491 /* UserDetailPasswordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 289E28E61ECCFA77006AC491 /* UserDetailPasswordCell.xib */; };
 		289E28E91ECCFA9F006AC491 /* UserDetailTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E28E81ECCFA9F006AC491 /* UserDetailTextFieldCell.swift */; };
-		289E28EB1ECCFAE0006AC491 /* UserDetailPassowrdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E28EA1ECCFAE0006AC491 /* UserDetailPassowrdCell.swift */; };
+		289E28EB1ECCFAE0006AC491 /* UserDetailPasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E28EA1ECCFAE0006AC491 /* UserDetailPasswordCell.swift */; };
 		289E28ED1ECCFB76006AC491 /* BaseTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E28EC1ECCFB76006AC491 /* BaseTextFieldCell.swift */; };
 		289E28F11ECD00FA006AC491 /* UserFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289E28F01ECD00FA006AC491 /* UserFormController.swift */; };
 /* End PBXBuildFile section */
@@ -41,9 +41,9 @@
 		280AC82D1ED63BA8005CB1CE /* FooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FooterView.xib; sourceTree = "<group>"; };
 		280AC82F1ED63C10005CB1CE /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		280AC8311ED63C32005CB1CE /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		289619A61EDD6E090057B148 /* TextFieldModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldModel.swift; sourceTree = "<group>"; };
 		289E28B41ECCF085006AC491 /* POP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		289E28B71ECCF085006AC491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		289E28B91ECCF085006AC491 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		289E28BC1ECCF085006AC491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		289E28BE1ECCF085006AC491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		289E28C11ECCF085006AC491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,10 +51,10 @@
 		289E28C81ECCF086006AC491 /* POPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		289E28CC1ECCF086006AC491 /* POPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POPTests.swift; sourceTree = "<group>"; };
 		289E28CE1ECCF086006AC491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		289E28E41ECCFA2A006AC491 /* UserDetailsAdvancedTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailsAdvancedTextFieldCell.xib; sourceTree = "<group>"; };
-		289E28E61ECCFA77006AC491 /* UserDetailsPasswordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailsPasswordCell.xib; sourceTree = "<group>"; };
+		289E28E41ECCFA2A006AC491 /* UserDetailTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailTextFieldCell.xib; sourceTree = "<group>"; };
+		289E28E61ECCFA77006AC491 /* UserDetailPasswordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailPasswordCell.xib; sourceTree = "<group>"; };
 		289E28E81ECCFA9F006AC491 /* UserDetailTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailTextFieldCell.swift; sourceTree = "<group>"; };
-		289E28EA1ECCFAE0006AC491 /* UserDetailPassowrdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailPassowrdCell.swift; sourceTree = "<group>"; };
+		289E28EA1ECCFAE0006AC491 /* UserDetailPasswordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailPasswordCell.swift; sourceTree = "<group>"; };
 		289E28EC1ECCFB76006AC491 /* BaseTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextFieldCell.swift; sourceTree = "<group>"; };
 		289E28F01ECD00FA006AC491 /* UserFormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserFormController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +99,7 @@
 		28341A0A1ECE285C006292DF /* models */ = {
 			isa = PBXGroup;
 			children = (
+				289619A61EDD6E090057B148 /* TextFieldModel.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -146,10 +147,10 @@
 		289E28E31ECCFA1B006AC491 /* cells */ = {
 			isa = PBXGroup;
 			children = (
-				289E28E41ECCFA2A006AC491 /* UserDetailsAdvancedTextFieldCell.xib */,
-				289E28E61ECCFA77006AC491 /* UserDetailsPasswordCell.xib */,
+				289E28E41ECCFA2A006AC491 /* UserDetailTextFieldCell.xib */,
+				289E28E61ECCFA77006AC491 /* UserDetailPasswordCell.xib */,
 				289E28E81ECCFA9F006AC491 /* UserDetailTextFieldCell.swift */,
-				289E28EA1ECCFAE0006AC491 /* UserDetailPassowrdCell.swift */,
+				289E28EA1ECCFAE0006AC491 /* UserDetailPasswordCell.swift */,
 				289E28EC1ECCFB76006AC491 /* BaseTextFieldCell.swift */,
 			);
 			name = cells;
@@ -158,7 +159,7 @@
 		289E28EE1ECD00CB006AC491 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				289E28B91ECCF085006AC491 /* CollectionViewController.swift */,
+				289E28BB1ECCF085006AC491 /* Main.storyboard */,
 				289E28F01ECD00FA006AC491 /* UserFormController.swift */,
 			);
 			name = controllers;
@@ -168,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				289E28B71ECCF085006AC491 /* AppDelegate.swift */,
-				289E28BB1ECCF085006AC491 /* Main.storyboard */,
 				289E28BE1ECCF085006AC491 /* Assets.xcassets */,
 				289E28C01ECCF085006AC491 /* LaunchScreen.storyboard */,
 				289E28C31ECCF085006AC491 /* Info.plist */,
@@ -263,8 +263,8 @@
 			files = (
 				280AC82E1ED63BA8005CB1CE /* FooterView.xib in Resources */,
 				289E28C21ECCF085006AC491 /* LaunchScreen.storyboard in Resources */,
-				289E28E71ECCFA77006AC491 /* UserDetailsPasswordCell.xib in Resources */,
-				289E28E51ECCFA2A006AC491 /* UserDetailsAdvancedTextFieldCell.xib in Resources */,
+				289E28E71ECCFA77006AC491 /* UserDetailPasswordCell.xib in Resources */,
+				289E28E51ECCFA2A006AC491 /* UserDetailTextFieldCell.xib in Resources */,
 				280AC82C1ED63AD5005CB1CE /* HeaderView.xib in Resources */,
 				289E28BF1ECCF085006AC491 /* Assets.xcassets in Resources */,
 				289E28BD1ECCF085006AC491 /* Main.storyboard in Resources */,
@@ -285,8 +285,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				289E28EB1ECCFAE0006AC491 /* UserDetailPassowrdCell.swift in Sources */,
-				289E28BA1ECCF085006AC491 /* CollectionViewController.swift in Sources */,
+				289E28EB1ECCFAE0006AC491 /* UserDetailPasswordCell.swift in Sources */,
+				289619A71EDD6E090057B148 /* TextFieldModel.swift in Sources */,
 				289E28E91ECCFA9F006AC491 /* UserDetailTextFieldCell.swift in Sources */,
 				289E28F11ECD00FA006AC491 /* UserFormController.swift in Sources */,
 				289E28ED1ECCFB76006AC491 /* BaseTextFieldCell.swift in Sources */,

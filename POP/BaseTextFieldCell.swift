@@ -4,13 +4,6 @@
 
 import UIKit
 
-struct FormFieldDataModel {
-
-    var placeholderText: String
-
-}
-
-
 /**
  This is base text field cell in the app.
  */
