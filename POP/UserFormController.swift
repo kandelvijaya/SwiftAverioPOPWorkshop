@@ -12,24 +12,24 @@ final class UserFormController: UITableViewController {
         return [item1, item2]
     }()
 
-    fileprivate struct CellIds {
-        static let detailCell = "UserDetailTextFieldCell"
-        static let passwordCell = "UserDetailPasswordCell"
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
     }
 
     private func registerCells() {
-        let nib = UINib(nibName: "UserDetailTextFieldCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: CellIds.detailCell)
-
-        let nib2 = UINib(nibName: "UserDetailPasswordCell", bundle: nil)
-        tableView.register(nib2, forCellReuseIdentifier: CellIds.passwordCell)
+        tableView.register(cell: UserDetailTextFieldCell.self)
+        tableView.register(cell: UserDetailPasswordCell.self)
     }
 
+}
+
+extension UITableView {
+
+    func register<T>(cell: T.Type) where T: UITableViewCell, T: NibDescriptor, T: CellDescriptor {
+        let nib2 = UINib(nibName: T.nibName, bundle: nil)
+        register(nib2, forCellReuseIdentifier: T.reuseIdentifier)
+    }
 }
 
 
@@ -72,10 +72,10 @@ extension UserFormController {
 
         //Configure
         if indexPath.row == 0 {
-            cell = tableView.dequeueReusableCell(withIdentifier: CellIds.detailCell)!
+            cell = tableView.dequeueReusableCell(withIdentifier: UserDetailTextFieldCell.reuseIdentifier)!
             (cell as? UserDetailTextFieldCell)?.setupFormField(with: currentModel)
         } else if indexPath.row == 1 {
-            cell = tableView.dequeueReusableCell(withIdentifier: CellIds.passwordCell)!
+            cell = tableView.dequeueReusableCell(withIdentifier: UserDetailPasswordCell.reuseIdentifier)!
             (cell as? UserDetailPasswordCell)?.setupFormField(with: currentModel)
         }
 

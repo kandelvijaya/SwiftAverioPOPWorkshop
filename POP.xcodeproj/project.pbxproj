@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		280AC82C1ED63AD5005CB1CE /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280AC82B1ED63AD5005CB1CE /* HeaderView.xib */; };
+		280AC82C1ED63AD5005CB1CE /* SomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280AC82B1ED63AD5005CB1CE /* SomeHeaderView.xib */; };
 		280AC82E1ED63BA8005CB1CE /* FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280AC82D1ED63BA8005CB1CE /* FooterView.xib */; };
 		280AC8301ED63C10005CB1CE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280AC82F1ED63C10005CB1CE /* HeaderView.swift */; };
 		280AC8321ED63C32005CB1CE /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280AC8311ED63C32005CB1CE /* FooterView.swift */; };
+		2825D84B1EE1C81800BFBCD2 /* TextFieldAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2825D84A1EE1C81800BFBCD2 /* TextFieldAnimator.swift */; };
+		2825D84D1EE1CB6100BFBCD2 /* NibCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2825D84C1EE1CB6100BFBCD2 /* NibCreatable.swift */; };
+		2825D84F1EE1CD4400BFBCD2 /* NibDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2825D84E1EE1CD4400BFBCD2 /* NibDescriptor.swift */; };
+		2825D8511EE1CFFC00BFBCD2 /* CellDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2825D8501EE1CFFC00BFBCD2 /* CellDescriptor.swift */; };
 		289619A71EDD6E090057B148 /* TextFieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289619A61EDD6E090057B148 /* TextFieldModel.swift */; };
 		289619AB1EDD6FCF0057B148 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289619A91EDD6FCF0057B148 /* APIService.swift */; };
 		289619AC1EDD6FCF0057B148 /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289619AA1EDD6FCF0057B148 /* APIServiceProtocol.swift */; };
@@ -40,10 +44,14 @@
 
 /* Begin PBXFileReference section */
 		280AC8291ED639C8005CB1CE /* POPSample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = POPSample.playground; sourceTree = "<group>"; };
-		280AC82B1ED63AD5005CB1CE /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		280AC82B1ED63AD5005CB1CE /* SomeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SomeHeaderView.xib; sourceTree = "<group>"; };
 		280AC82D1ED63BA8005CB1CE /* FooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FooterView.xib; sourceTree = "<group>"; };
 		280AC82F1ED63C10005CB1CE /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		280AC8311ED63C32005CB1CE /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		2825D84A1EE1C81800BFBCD2 /* TextFieldAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldAnimator.swift; sourceTree = "<group>"; };
+		2825D84C1EE1CB6100BFBCD2 /* NibCreatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibCreatable.swift; sourceTree = "<group>"; };
+		2825D84E1EE1CD4400BFBCD2 /* NibDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibDescriptor.swift; sourceTree = "<group>"; };
+		2825D8501EE1CFFC00BFBCD2 /* CellDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellDescriptor.swift; sourceTree = "<group>"; };
 		289619A61EDD6E090057B148 /* TextFieldModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldModel.swift; sourceTree = "<group>"; };
 		289619A91EDD6FCF0057B148 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		289619AA1EDD6FCF0057B148 /* APIServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
@@ -94,10 +102,12 @@
 		280AC82A1ED63AB9005CB1CE /* views */ = {
 			isa = PBXGroup;
 			children = (
-				280AC82B1ED63AD5005CB1CE /* HeaderView.xib */,
+				280AC82B1ED63AD5005CB1CE /* SomeHeaderView.xib */,
 				280AC82D1ED63BA8005CB1CE /* FooterView.xib */,
 				280AC82F1ED63C10005CB1CE /* HeaderView.swift */,
 				280AC8311ED63C32005CB1CE /* FooterView.swift */,
+				2825D84C1EE1CB6100BFBCD2 /* NibCreatable.swift */,
+				2825D84E1EE1CD4400BFBCD2 /* NibDescriptor.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -167,6 +177,8 @@
 				289E28E61ECCFA77006AC491 /* UserDetailPasswordCell.xib */,
 				289E28E81ECCFA9F006AC491 /* UserDetailTextFieldCell.swift */,
 				289E28EA1ECCFAE0006AC491 /* UserDetailPasswordCell.swift */,
+				2825D8501EE1CFFC00BFBCD2 /* CellDescriptor.swift */,
+				2825D84A1EE1C81800BFBCD2 /* TextFieldAnimator.swift */,
 				289E28EC1ECCFB76006AC491 /* BaseTextFieldCell.swift */,
 			);
 			name = cells;
@@ -283,7 +295,7 @@
 				289E28C21ECCF085006AC491 /* LaunchScreen.storyboard in Resources */,
 				289E28E71ECCFA77006AC491 /* UserDetailPasswordCell.xib in Resources */,
 				289E28E51ECCFA2A006AC491 /* UserDetailTextFieldCell.xib in Resources */,
-				280AC82C1ED63AD5005CB1CE /* HeaderView.xib in Resources */,
+				280AC82C1ED63AD5005CB1CE /* SomeHeaderView.xib in Resources */,
 				289E28BF1ECCF085006AC491 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,11 +319,15 @@
 				289619A71EDD6E090057B148 /* TextFieldModel.swift in Sources */,
 				289E28E91ECCFA9F006AC491 /* UserDetailTextFieldCell.swift in Sources */,
 				289E28F11ECD00FA006AC491 /* UserFormController.swift in Sources */,
+				2825D8511EE1CFFC00BFBCD2 /* CellDescriptor.swift in Sources */,
 				289E28ED1ECCFB76006AC491 /* BaseTextFieldCell.swift in Sources */,
 				280AC8321ED63C32005CB1CE /* FooterView.swift in Sources */,
 				289E28B81ECCF085006AC491 /* AppDelegate.swift in Sources */,
+				2825D84F1EE1CD4400BFBCD2 /* NibDescriptor.swift in Sources */,
+				2825D84D1EE1CB6100BFBCD2 /* NibCreatable.swift in Sources */,
 				289619AB1EDD6FCF0057B148 /* APIService.swift in Sources */,
 				289619AC1EDD6FCF0057B148 /* APIServiceProtocol.swift in Sources */,
+				2825D84B1EE1C81800BFBCD2 /* TextFieldAnimator.swift in Sources */,
 				280AC8301ED63C10005CB1CE /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
